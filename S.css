@@ -60,3 +60,88 @@
   box-shadow: 0 6px 15px rgba(0, 0, 0, 0.25);
   transition: 0.3s;
 }
+/* Hero Section Desktop Layout */
+.hero-section {
+    background: url('./assets/hero-bg.png') no-repeat center center;
+    background-size: cover;
+    padding: 80px 0;
+    text-align: center;
+}
+.visual-assets {
+    position: relative;
+    width: fit-content;
+    margin: 0 auto 50px;
+}
+.hero-glow {
+    width: 400px;
+}
+.mic{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100px;
+}
+.new-badge{
+    position: absolute;
+    top: 50px;
+    right: 20px;
+    background-color: #00F5A0;
+    color: #1A0B2E;
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-weight: 800;
+}
+.desktop-title {
+    font-size: 5rem;
+    color: white;
+    margin-bottom: 20px;
+    font-weight: 800;
+}
+.hero-subtitle {
+    font-size: 1.2rem;
+    color: #cbd5e1;
+    max-width: 650px;
+    margin: 0 auto 50px;
+    line-height: 1.6;
+}
+.hero-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.hero-buttons a{
+  text-decoration: none;
+  display: flex;
+  padding: 8px 50px;
+  border-radius: 50px;
+}
+.btn-subscribe{
+    border: 2px solid #00F5A0;
+    color: #00F5A0;
+    padding: 15px 35px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    height: 44px;
+}
+.btn-subscribe:hover{
+    background-color: rgba(107, 186, 127, 0.385);
+    border-color: #06b650;
+    color: #06b650;
+    transition: 0.3s ease-in-out;
+}
+@media (max-width: 992px) {
+    .nav-menu, .btn-nav-subscribe {
+        display: none;
+    }
+    .desktop-title {
+        font-size: 3rem;
+    }
+}
+
+
