@@ -195,15 +195,6 @@
     color: #cbd5e1;
     text-transform: uppercase;
 }
-@media screen and (max-width: 576px) {
-    .stats-grid {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 40px;
-    }
-    .about-header h2 {
-        font-size: 2.2rem;
-    }
-}
 .features-section {
     background-color: #230E3D;
     padding: 100px 50px;
@@ -245,21 +236,29 @@
     width: 48px;
     margin-bottom: 20px;
 }
-.feature-card.vertical { grid-area: vertical; }
+.feature-card.vertical { 
+  grid-area: vertical;
+ }
 .feature-card.wide { 
     grid-area: wide; 
     display: flex;
     gap: 30px;
     align-items: center;
 }
-.feature-card.small { grid-area: small; }
+.feature-card.small {
+   grid-area: small;
+   }
 .feature-card.horizontal {
     display: flex;
     align-items: center;
     gap: 30px;
 }
-.features-grid .feature-card:nth-child(2) { grid-area: top-right; }
-.features-grid .feature-card:nth-child(3) { grid-area: mid-right; }
+.features-grid .feature-card:nth-child(2) { 
+  grid-area: top-right;
+ }
+.features-grid .feature-card:nth-child(3) { 
+  grid-area: mid-right;
+ }
 .feature-card h3 {
     font-size: 1.5rem;
     margin-bottom: 15px;
@@ -275,7 +274,6 @@
     color: white;
     padding: 80px 50px;
 }
-
 .section-title {
     text-align: center;
     font-size: 2.5rem;
@@ -405,4 +403,23 @@
     font-size: 0.9rem;
     border-top: 1px solid rgba(255, 255, 255, 0.1);
     padding-top: 30px;
+}
+.mobile-ham {
+  display: none;
+}
+@media screen and (max-width:576px) {
+  .mobile-ham{
+    display: inline-block;
+    margin-left:280px ;
+  }
+}
+
+@media screen and (max-width:576px) {
+  .nav-links{
+    visibility: hidden;
+  }
+  .btn{
+    visibility: hidden;
+  }
+
 }
