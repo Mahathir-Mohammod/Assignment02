@@ -434,7 +434,7 @@
   }
 }
 @media screen and (max-width:576px) {
-  .nav-links{
+    .nav-links{
     visibility: hidden;
   }
   .btn{
@@ -448,5 +448,17 @@
     }
     .about-header h2 {
         font-size: 2.2rem;
+    }
+}
+@media screen and (max-width: 576px) {
+    .episodes-grid { 
+        grid-template-columns: 1fr;
+    }
+    .host-card {
+        flex-direction: column; 
+        text-align: center;
+    }
+    .host-card .host-details .social-links {
+        margin-left: 100px;
     }
 }
