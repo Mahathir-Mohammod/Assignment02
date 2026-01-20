@@ -403,7 +403,7 @@
     opacity: 1;
 }
 .main-footer {
-    background: url('./assets/footer-bg.png') no-repeat center center;
+    background: url('./assets/M-Footer.png') no-repeat center center;
     background-size: cover;
     padding: 100px 20px 40px;
     text-align: center;
@@ -516,14 +516,6 @@
     }
 }
 @media screen and (max-width: 576px) {
-    footer {
-        width: 100%;
-        background-image: url(./assets/footer-bg.png);
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        overflow: hidden;
-    }
     .footer-logo {
         font-size: 2rem;
         margin-bottom: 10px;
