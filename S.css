@@ -20,9 +20,8 @@
 }
 .desktop {
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    padding: 20px 50px;
+    padding: 20px;
     background-color: #1A0B2E;
 }
 .nav-links {
@@ -447,18 +446,15 @@
 .mobile-ham {
   display: none;
 }
-@media screen and (max-width:576px) {
-  .mobile-ham{
-    display: inline-block;
-    margin-left:280px ;
+@media screen and (max-width: 576px) {
+
+  .nav-links,
+  .btn {
+    display: none;
   }
-}
-@media screen and (max-width:576px) {
-    .nav-links{
-    visibility: hidden;
-  }
-  .btn{
-    visibility: hidden;
+  .mobile-ham {
+    display: block;
+    margin-left: auto; 
   }
 }
 @media screen and (max-width: 576px) {
